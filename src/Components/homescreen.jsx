@@ -1,7 +1,15 @@
 import React from "react";
 import LoGo from "./logo";
-// import digitalocean from "./assets/Digital Ocean.png";
-
+import estore from "./images/ecommerce-estore.png";
+import mobile from "./images/Mobile.png";
+import grocery from "./images/grocery.png";
+import ShowCards from "./cards";
+import TextContents from "./textcontents";
+import fashions from "./images/fashions.png";
+import electronics from "./images/electronics.png";
+import appliances from "./images/appliances.png";
+import sofa from "./images/sofas.png";
+import toys from "./images/Toys.png";
 function NavBar() {
   return (
     <nav className="navbar">
@@ -36,18 +44,80 @@ function NavBar() {
       </div>
       <div className="mainbar">
         <div className="mainbarimages">
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
+          <div className="text-content">
+            <img
+              src={grocery}
+              alt="Avatar"
+              style={{ width: "200px", height: "60px" }}
+            />
+            <p>Groceries</p>
+          </div>
+
+          <div className="text-content">
+            <img
+              src={mobile}
+              alt="Avatar"
+              style={{ width: "80px", height: "60px" }}
+            />
+            <p>Mobiles</p>
+          </div>
+
+          <div className="text-content">
+            <img
+              src={fashions}
+              alt="Avatar"
+              style={{ width: "80px", height: "60px" }}
+            />
+            <p>Fashions</p>
+          </div>
+          <div className="text-content">
+            <img
+              src={electronics}
+              alt="Avatar"
+              style={{ width: "80px", height: "60px" }}
+            />
+            <p>Electronics</p>
+          </div>
+          <div className="text-content">
+            <img
+              src={appliances}
+              alt="Avatar"
+              style={{ width: "80px", height: "60px" }}
+            />
+            <p>Home</p>
+          </div>
+          <div className="text-content">
+            <img
+              src={sofa}
+              alt="Avatar"
+              style={{ width: "80px", height: "60px" }}
+            />
+            <p>Home Appliances</p>
+          </div>
+
+          <div className="text-content">
+            <img
+              src={toys}
+              alt="Avatar"
+              style={{ width: "80px", height: "60px" }}
+            />
+            <p>Toys</p>
+          </div>
         </div>
       </div>
       <div>
-        <div className="mainbarimages">
-          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp" />
+        <div className="banner">
+          <div className="estore">
+            <img src={estore} alt="banner" />
+          </div>
+        </div>
+        <div className="cards">
+          <div>
+            <ShowCards />
+          </div>
+        </div>
+        <div>
+          <TextContents />
         </div>
       </div>
     </nav>

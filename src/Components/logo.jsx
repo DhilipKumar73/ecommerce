@@ -1,13 +1,10 @@
 import React from "react";
+import logo from "./images/logo.png";
 
 function LoGo() {
   return (
     <div>
-      <img
-        src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp"
-        alt=""
-        loading="lazy"
-      />
+      <img src={logo} alt="Avatar" style={{ width: "200px", height: "60px" }} />
     </div>
   );
 }
